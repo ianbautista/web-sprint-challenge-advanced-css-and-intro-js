@@ -163,6 +163,7 @@ button:hover{
     h1 {
         font-size: 4rem;
         font-weight: 600;
+        line-height: 5rem;
     }
 
     .title-container {
@@ -171,7 +172,7 @@ button:hover{
     .title-container div {
         width: 100%;
         background-size: cover;
-        height: 50vh;
+        height: 40vh;
         margin-bottom: 1%;
     }
     .title-container hr{
