@@ -380,7 +380,10 @@ returns a the same array in a randomized order. */
 
 function randomize(data) {
 	/* Code here */
+	data.sort(() => Math.random() - 0.5);
+	console.log(data);
 }
+randomize(artists);
 
 /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code 
 (create an array of all artists born in the 1900s with .filter, for example) */
