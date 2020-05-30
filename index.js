@@ -363,20 +363,35 @@ In HTML, every artist and associated content uses the following structure:
 <div class = "bio">Vincent Willem van Gogh (Dutch: [ˈvɪnsɛnt ˈʋɪləm vɑŋ ˈɣɔx] (listen); 30 March 1853 – 29 July 1890) was a Dutch Post-Impressionist painter who is among the most famous and influential figures in the history of Western art. In just over a decade he created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art. However, he was not commercially successful, and his suicide at 37 followed years of mental illness and poverty.</div>
 </div>
 
-Create a function called `getHTML()` that takes the parameter `data` and uses a for..in loop to format and console.log data like the example above. 
+Create a function called `getHTML()` that takes the parameter `data` and uses a for..in loop to 
+format and console.log data like the example above. 
 
 The function should console.log 50 chunks of HTML code that match the structure above. 
 
-‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
+‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result 
+into your HTML file if you'd like to see what that would look like. */
 
 function getHTML(/* Code here */) {
 	/* Code here */
 }
 
-/* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
+/* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and 
+returns a the same array in a randomized order. */
 
-function randomize(/* Code here */) {
+function randomize(data) {
 	/* Code here */
 }
 
-/* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
+/* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code 
+(create an array of all artists born in the 1900s with .filter, for example) */
+function lotsOfArt(artistsArray) {
+	/* Code here */
+	lotsOfArtArray = [];
+	for (let i = 0; i < artistsArray.length; i++) {
+		if (artistsArray[i].paintings > 100) {
+			lotsOfArtArray.push(artistsArray[i].name);
+		}
+	}
+	return lotsOfArtArray;
+}
+lotsOfArt(artists);
