@@ -247,18 +247,30 @@ console.log(artists[8]);
  */
 function getArtistByIndex(id, name) {
 	/* code here */
-
-	return `The artist at index ${id} is ${name}.`;
+	return `The artist at index ${id} is ${name[id].name}.`;
 }
+getArtistByIndex(0, artists);
 
 /**
 
 
-/* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
+/* Task 4: Create a function called get20s() that takes data as an argument and returns an array 
+with names of artists who were born the 20th century (1900-2000) */
 
-function get20s(/* Code here */) {
+function get20s(data) {
 	/* Code here */
+	const get20sArray = [];
+	const if20sArray = [];
+	for (let i = 0; i < data.length; i++) {
+		let century20 = data[i].years.substring(0, 2);
+		if20sArray.push(century20);
+		if (if20sArray[i] == 19) {
+			get20sArray.push(data[i].name);
+		}
+	}
+	return get20sArray;
 }
+get20s(artists);
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
