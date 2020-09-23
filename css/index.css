@@ -134,3 +134,83 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+
+@media (max-width: 500px) {
+
+    * {
+        /* border: 1px solid red !important; */
+        box-sizing: border-box;
+    }
+    header {
+        width: 100%;
+    }
+
+    header nav {
+        width: 50%;
+        justify-content: space-around;
+        line-height: 1.5rem;
+    }
+
+    nav span{
+        border-left:2px solid #626262;
+    }
+
+    header nav a{
+        font-size: 1.6rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 5rem;
+    }
+
+    .title-container {
+        width: 100%;
+    }
+    .title-container div {
+        width: 100%;
+        background-size: cover;
+        height: 40vh;
+        margin-bottom: 1%;
+    }
+    .title-container hr{
+        width:100%;
+    }
+
+    button{
+        padding:1% 4%;
+        font-size: 1.2rem;
+        border-radius:4px;
+        box-shadow: 1px 1px .5px #626262;
+    }
+/*Artists Section Styles */
+    .artists-container {
+        width: 100%;
+        flex-direction: column;
+        border: 2px solid red;
+        padding-bottom: 15%;
+    }
+    .artist {
+        width: 100%;
+    }
+
+    .artist img {
+        max-width: 200px;
+        max-height: 170px;
+        object-fit: fill;
+
+    }
+    .artist a {
+        font-size: 1.4rem;
+    }
+    .artist div {
+        font-size: 1rem;
+        width: 60%;
+        margin: 0 auto;
+        padding-bottom: 4%;
+        margin-top: 2%;
+        line-height: 1rem;
+    }
+}
